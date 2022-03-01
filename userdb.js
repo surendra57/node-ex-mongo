@@ -1,8 +1,8 @@
 const mongoose=require("mongoose");
-
+// const url="mongodb+srv://suren96:LgXBjGkeuVfM17ns@cluster0.lor5i.mongodb.net/userdata"
 const connDatabase= () => {
     mongoose
-    .connect("process.env.MONGODB_URI || mongodb://localhost:27017/userData",{
+    .connect(process.env.DATABASE,{
          useNewUrlParser:true,
          useUnifiedTopology:true,
     
