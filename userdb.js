@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const url="mongodb+srv://suren96:LgXBjGkeuVfM17ns@cluster0.lor5i.mongodb.net/userdata"
+const url="mongodb://localhost:27017/userdata"
 const connDatabase= () => {
     mongoose
     .connect(process.env.DATABASE ||url ,{
