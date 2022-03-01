@@ -6,6 +6,7 @@ const router=require("./userRoutes");
 const connDatabase=require('./userdb');
 
 const app=express();
+const port=process.env.PORT || 8800;
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.json());
@@ -22,6 +23,6 @@ app.get("/",(req,res)=>{
 
 
 
-app.listen(8800,()=>{
+app.listen(port,()=>{
     console.log("server is working on 8800")
 })
