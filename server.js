@@ -11,7 +11,7 @@ const port=process.env.PORT || 8800;
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.json());
 app.use(router);
-
+ 
 //connect the database
 connDatabase();
 

@@ -2,7 +2,7 @@ const mongoose=require("mongoose");
 
 const connDatabase= () => {
     mongoose
-    .connect("mongodb://localhost:27017/userData",{
+    .connect("process.env.MONGODB_URI || mongodb://localhost:27017/userData",{
          useNewUrlParser:true,
          useUnifiedTopology:true,
     
